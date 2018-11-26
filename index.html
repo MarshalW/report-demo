@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单示例</title>
+</head>
+<body>
+<h1>表单示例</h1>
+<form name='reportForm' method="post">
+    <div>
+        <label>姓名: </label>
+        <input type="text" name="user_name">
+    </div>
+    <div class="button">
+        <button type="submit">提交</button>
+    </div>
+</form>
+<script src="./script/report.js"></script>
+<script>
+    new Report({
+        form:document.reportForm
+    })
+</script>
+</body>
+</html>
